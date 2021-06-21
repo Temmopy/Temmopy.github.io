@@ -6,17 +6,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="Gridea静态个人博客">
-<meta name="description" content="温故而知新">
+<meta name="description" content="生无所息">
 <meta name="theme-color" content="#000">
-<title>Gridea</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1624111250768">
+<title>Ein Niemand</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1624272155418">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/default.css"
+<link href="/media/hljs/styles/monokai-sublime.css"
   rel="stylesheet">
 
 <link rel="stylesheet" href="/styles/main.css">
@@ -61,12 +61,12 @@
         <div class="site-title">
           
             <a href="/" class="brand">
-              <span>Gridea</span>
+              <span>Ein Niemand</span>
             </a>  
           
         </div>
         
-          <p class="subtitle">精于心，简于形</p>
+          <p class="subtitle">生无所息</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -180,7 +180,13 @@
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">我是谁</p>
+    <p class="site-author-name">Ein Niemand</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">蒟蒻</p>
+      
+    </div>
     
   </div>
   <div class="sidebar-item side-item-stat right-motion">
@@ -206,10 +212,39 @@
   </div>
   
     
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://Temmopy.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
   
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="https://github.com/Temmopy">
+              <i class="fa fa-github-alt" title="github"></i>
+            </a>
+          
+            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1762089442&amp;site=qq&amp;menu=yes">
+              <i class="fa fa-qq" title="QQ"></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
   
 
 
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
 
 </div>
 </div>
@@ -276,10 +311,11 @@
         
         
           
-            <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+            <img src="/post-images/hello-gridea.png" />
+          
+          <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-          
         
         
         <div class="post-button text-center">
@@ -324,7 +360,7 @@
         href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
     </div>
     <div class="poweredby">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+      Powered by <a href="https://github.com/Temmopy/Temmopy.github.io" target="_blank">Ein Niemand</a>
     </div>
   </footer>
   
@@ -337,6 +373,13 @@
     </span>
     
   </div>
+  
+  
+  
+  <div class="bg-img">
+    <img src="\media\images\custom-bgImg.jpg" />
+  </div>
+  
   
   
   
@@ -468,7 +511,7 @@
   }
 
   // 链接跳转
-  let newWindow = 'false'
+  let newWindow = 'true'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
@@ -869,6 +912,12 @@
 </script>
 
 
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
+
+
+<script src="/media/js/cool.js"></script>
 
 
 

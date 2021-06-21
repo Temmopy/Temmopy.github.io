@@ -2051,8 +2051,10 @@ p > code {
     margin-bottom: 10px;
   }
 }
-body {
-      background-color: #eee;
+.bg-color .bg-color {
+      background: transparent !important;
+    }body {
+      background-color: #a5d8ff;
     }.header {
         width: 960px;
         margin: 0 auto;
@@ -2062,6 +2064,20 @@ body {
         width: 960px;
         margin: 0 auto;
       }
+    @font-face {
+      font-family: 'shoushuti';
+      src: url('/media/fonts/shoushuti.ttf');
+    }
+    * {
+        font-family: 'shoushuti';
+    }
+    .katex-block *{
+      font-family: 'KaTeX_Main';
+    }
+    
+    .post-body {
+      font-size: 24px !important
+    }
     body {
       color: #555;
     }
@@ -2072,21 +2088,21 @@ body {
       border-bottom-color: #555;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #eeeeeefe;
+      background: #ffd43bb2;
     }h1, h2, h3, h4, h5, h6 {
-      color: #555;
+      color: #748ffc;
     }
     
     .archive-timeline-title::before {
-      background-color: #555;
+      background-color: #748ffc;
     }
     
     .post-title-link::before {
-      background-color: #555;
+      background-color: #748ffc;
     }
     
     .node-title::before {
-      background-color: #555;
+      background-color: #748ffc;
     }a {
       color: #555;
     }
@@ -2095,35 +2111,34 @@ body {
       color: #555;
       border-bottom: 1px solid #555;
     }a:hover {
-      color: #222;
+      color: #f783ac;
     }
     
     .archive-timeline-box .tag-node:hover::before {
-      background-color: #222;
+      background-color: #f783ac;
     }
     
     .markdownIt-TOC a:hover {
-      color: #222;
-      border-bottom-color: #222;
+      color: #f783ac;
+      border-bottom-color: #f783ac;
     }
 
     .next-md-body a:hover, .friends-box a:hover {
-      color: #222;
-      border-bottom-color: #222;
-    }
-    .nav-toggle .line {
-      background-color:  !important;
+      color: #f783ac;
+      border-bottom-color: #f783ac;
+    }.nav-toggle .line {
+      background-color: #d9480f !important;
     }
       .nav-item a {
         color:  #555;
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #f9f9f9fe;
+      background: #ffec99b2;
     }
 
     .nav-item:hover {
-      background: #f9f9f9fe;
+      background: #ffec99b2;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2135,11 +2150,11 @@ body {
       transition-duration: 59s;
       transition-timing-function: cubic-bezier(.34,0,.84,1);
     }.markdownIt-TOC a {
-      color: #eee;
-      border-bottom-color: #eee;
+      color: #212529;
+      border-bottom-color: #212529;
     }.markdownIt-TOC a:hover {
-      color: #fff;
-      border-bottom-color: #fff;
+      color: #d9480f;
+      border-bottom-color: #d9480f;
     }.active-current > a {
       color: #fc6423 !important;
       border-bottom-color: #fc6423 !important;
@@ -2159,7 +2174,13 @@ body {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #fffffffe;
+      background-color: #FFFAFAb2;
+    }
+    .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
+      border-radius: 12px;
+    }
+    .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
+      border-radius: 12px;
     }
     .site-meta {
       background: #000 !important;
@@ -2168,25 +2189,27 @@ body {
       background: #000;
     }
     .brand {
-      background: #000000fe;
+      background: #000000b2;
     }
     .main-title, .brand {
-      color: #FFF !important;
+      color: #66d9e8 !important;
     }
     .mist .site-title i {
-      background: #FFFFFFfe;
+      background: #66d9e8b2;
+    }.box-shadow-wrapper {
+      padding: 10px;
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
-      cursor: default;
+      cursor: url('/media/curs/normal.cur'), default;
     }a {
-      cursor: pointer;
+      cursor: url('/media/curs/link.cur'), pointer !important;
     }input, textarea, code {
-      cursor: text;
+      cursor: url('/media/curs/test.cur'), text !important;
     }code > span.copy-code {
-      cursor: pointer;
+      cursor: url('/media/curs/extra_attack.cur'), text !important;
     }.post img {
-      cursor: zoom-in;
+      cursor: url('/media/curs/diag1.cur'), zoom-in !important;
     }.post img {
-      cursor: zoom-out;
+      cursor: url('/media/curs/diag2.cur'), zoom-out !important;
     }
